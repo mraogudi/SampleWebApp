@@ -1,0 +1,19 @@
+<div *ngIf="invalidCredentialMsg" ngClass="error">{{invalidCredentialMsg}}</div>
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+        <div class="form-group bgclass">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" formControlName="username" size="1" id="uname" class="trninput"/>
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" formControlName="password" size="1" class="trninput"/>
+            <div class="modal-footer">
+                <button type="submit" class="savebtn btn btn-save">Submit</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" class="cancelbtn btn btn-warning" (click)="clearForm()">Clear</button>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </form>
+</div>
