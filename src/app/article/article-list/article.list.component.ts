@@ -6,7 +6,8 @@ import { ArticleService } from '../services/article.service';
 import { Article } from '../services/article';
 
 @Component({
-  templateUrl: './article.list.component.html' 
+  templateUrl: './article.list.component.html',
+  styleUrls: ['./article.list.component.css']
 }) 
 export class ArticleListComponent implements OnInit { 
   articles: Observable<Article[]>;

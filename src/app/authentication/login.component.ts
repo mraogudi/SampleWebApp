@@ -32,6 +32,6 @@ export class LoginComponent {
 	}
 
 	clearForm() {
-		
+		this.loginForm.reset();
 	}
 }

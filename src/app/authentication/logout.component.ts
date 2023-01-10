@@ -6,9 +6,8 @@ import { User } from './services/user';
 
 @Component({
     selector: 'logout',
-    template: `Logged In: {{loggedInUser.username}} | {{loggedInUser.role}} | 
-           <button input='input' (click)="logout()">Logout</button>
-	`
+    templateUrl: './logout.component.html',
+    styleUrls: ['./logout.component.css']
 })
 export class LogoutComponent {
     loggedInUser = {} as User;
